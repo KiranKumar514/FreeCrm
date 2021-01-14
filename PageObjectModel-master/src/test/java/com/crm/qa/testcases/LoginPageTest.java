@@ -31,7 +31,7 @@ public class LoginPageTest extends TestBase{
 		Assert.assertEquals(title, "#1 Free CRM customer relationship management software cloud");
 	}
 	
-	@Test(priority=2, enabled=false)
+	@Test(priority=2, enabled=true)
 	public void crmLogoImageTest(){
 		boolean flag = loginPage.validateCRMImage();
 		Assert.assertTrue(flag);
