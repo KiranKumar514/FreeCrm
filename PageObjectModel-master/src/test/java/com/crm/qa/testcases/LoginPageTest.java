@@ -37,7 +37,7 @@ public class LoginPageTest extends TestBase{
 		Assert.assertTrue(flag);
 	}
 	
-	@Test(priority=3)
+	@Test(groups={ "regression" })
 	public void loginTest(){
 		loginPage.login(prop.getProperty("username"), prop.getProperty("password"));
 		Assert.assertEquals(loginPage.verifyName(), "Kiran Kumar","Name is not valid");
