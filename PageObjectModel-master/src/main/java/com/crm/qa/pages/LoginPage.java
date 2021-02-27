@@ -24,7 +24,7 @@ public class LoginPage extends TestBase{
 	@FindBy(xpath="//button[contains(text(),'Sign Up')]")
 	WebElement signUpBtn;
 	
-	@FindBy(xpath="//img[contains(@class,'img-responsive')]")
+	@FindBy(xpath="/html/body/div[1]/header/div/nav/div[2]/div/div[1]/div/a/span[2]")
 	WebElement crmLogo;
 	
 	@FindBy(xpath="//*[@id='top-header-menu']/div[2]/span[1]")
@@ -50,6 +50,7 @@ public class LoginPage extends TestBase{
 		username.sendKeys(un);
 		password.sendKeys(pwd);
 		signBtn.click();
+		return new HomePage();
 		
 //		    	JavascriptExecutor js = (JavascriptExecutor)driver;
 //		    	js.executeScript("arguments[0].click();", loginBtn);
@@ -60,7 +61,7 @@ public class LoginPage extends TestBase{
 		
 		
 		    	
-		return new HomePage();
+		
 	}
 	
 	public String verifyName() {

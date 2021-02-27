@@ -26,7 +26,6 @@ public class ContactsPage extends TestBase {
 	WebElement saveBtn;
 	
 	
-	
 	// Initializing the Page Objects:
 	public ContactsPage() {
 		PageFactory.initElements(driver, this);
